@@ -1,0 +1,8 @@
+language: cpp
+os: linux
+compiler: gcc
+script:
+ - mkdir build
+ - cd build
+ - cmake ..
+ - cmake --build . --config Debug
