@@ -4,7 +4,9 @@ set (SOURCE
 	"./Source/Private/Main.cpp"
 )
  
- include_directories( ../ThirdParty/googletest/googletest/include )
+ enable_testing()
+ 
+ include_directories(../ThirdParty/googletest/googletest/include)
  
  add_executable(unit_test ${HEADER} ${SOURCE})
  
