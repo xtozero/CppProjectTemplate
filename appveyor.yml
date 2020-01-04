@@ -21,9 +21,13 @@ init:
     if "%APPVEYOR_BUILD_WORKER_IMAGE%"=="Visual Studio 2013" ( set generator="Visual Studio 12 2013%arch%" )
     
     echo %generator%
+install:
+- cmd: >-
+    
+    git submodule update --init
 before_build:
 - cmd: >-
-
+    
     mkdir build
     
     cd build
