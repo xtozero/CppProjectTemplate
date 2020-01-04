@@ -7,4 +7,5 @@ script:
  - cd build
  - cmake .. -DBUILD_TESTS=ON
  - cmake --build . --config Release
- - ctest
+ - cd UnitTest
+ - ctest -C Release
