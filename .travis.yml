@@ -7,3 +7,4 @@ script:
  - cd build
  - cmake ..
  - cmake --build . --config Release
+ - unit_test
