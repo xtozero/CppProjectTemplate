@@ -36,3 +36,6 @@ before_build:
 build:
   project: c:\CppProjectTemplate\build\CppProjectTemplate.sln
   verbosity: minimal
+  
+after_build:
+- cmd: c:\CppProjectTemplate\build\UnitTest\Release\unit_test.exe
