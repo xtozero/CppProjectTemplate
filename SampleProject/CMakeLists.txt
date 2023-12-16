@@ -6,6 +6,8 @@ set (SOURCE
 	"./Source/Private/Main.cpp"
 )
 
-include_directories(Source/Public)
-
 add_executable(sample_project ${HEADER} ${SOURCE})
+
+target_include_directories(sample_project
+PUBLIC
+	Source/Public)
